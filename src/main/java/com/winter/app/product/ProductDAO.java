@@ -12,6 +12,7 @@ public class ProductDAO {
 
 	
 	
+
 	//디테일 
 	public ProductDTO detail(ProductDTO productDTO) throws Exception {
 		Connection con = DBConnector.getConnector();
@@ -29,6 +30,10 @@ public class ProductDAO {
 			productDTO.setProductContents(rs.getString("PRODUCTCONTENTS"));
 			productDTO.setProductRate(rs.getDouble("PRODUCTRATE"));
 			productDTO.setProductJumsu(rs.getDouble("PRODUCTJUMSU"));
+
+	
+	public ProductDTO  detail(ProductDTO productDTO) {
+
 			
 		}		
 					
@@ -60,20 +65,23 @@ public class ProductDAO {
 			
 		return ar;
 	}
+
 	
-	public int add(ProductDTO bnBankDTO) {
+
+	public int add(ProductDTO productDTO) {
+
 		
 		return 0;
 		
 	}
 	
-	public int delete(ProductDTO bankDTO) {
+	public int delete(ProductDTO productDTO) {
 		
 		return 0;
 		
 	}
 	
-	public int update(ProductDTO bankDTO) {
+	public int update(ProductDTO productDTO) {
 		
 		return 0;
 		
