@@ -10,7 +10,7 @@ public class productController {
 
 	@RequestMapping(value="list", method = RequestMethod.GET)
 	public void list() {
-	
+		
 		
 	}
 	
