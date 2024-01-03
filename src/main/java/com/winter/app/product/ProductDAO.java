@@ -30,16 +30,10 @@ public class ProductDAO {
 			productDTO.setProductContents(rs.getString("PRODUCTCONTENTS"));
 			productDTO.setProductRate(rs.getDouble("PRODUCTRATE"));
 			productDTO.setProductJumsu(rs.getDouble("PRODUCTJUMSU"));
-
-	
-	public ProductDTO  detail(ProductDTO productDTO) {
-
-			
-		}		
-					
+		}
 		return productDTO;
 	}
-	
+
 	//목록
 	public List<ProductDTO> list() throws Exception {	
 		Connection con = DBConnector.getConnector();

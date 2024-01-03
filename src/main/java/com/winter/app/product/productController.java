@@ -15,9 +15,9 @@ public class productController {
 
 	@RequestMapping(value="list", method = RequestMethod.GET)
 
-	public void list() {
 
-	public String list(HttpServletRequest request) {
+
+	public String list(HttpServletRequest request)	throws Exception {
 		ProductDAO productDAO = new ProductDAO();
 		List<ProductDTO> ar = productDAO.list();
 		request.setAttribute("list", ar);
@@ -31,7 +31,7 @@ public class productController {
 	
 	
 	@RequestMapping(value="detail", method = RequestMethod.GET)
-	public void detail(ProductDTO productDTO) {
+	public void detail(ProductDTO productDTO) throws Exception{
 		ProductDAO productDAO = new ProductDAO();
 		
 		productDAO.detail(productDTO);
