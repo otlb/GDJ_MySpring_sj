@@ -14,6 +14,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class productController {
 
 	@RequestMapping(value="list", method = RequestMethod.GET)
+
+	public void list() {
+
 	public String list(HttpServletRequest request) {
 		ProductDAO productDAO = new ProductDAO();
 		List<ProductDTO> ar = productDAO.list();
@@ -21,6 +24,7 @@ public class productController {
 		
 		return "product/list";
 		
+
 		
 		
 	}
