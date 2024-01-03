@@ -6,18 +6,18 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<c:import url="../temps/bootStrap_css.js"></c:import>
+<c:import url="../temps/bootStrap_css.jsp"></c:import>
 </head>
 <body>
-<c:import url="../temps/header.jsp]"></c:import> 
+<c:import url="../temps/header.jsp"></c:import> 
 
 	<section>
 	<table>
-	<c:forEach items="${requestScope.list}", value="dto" >
+	<c:forEach items="${requestScope.list}" var="dto" >
 		<tr>
 		<td>${dto.productNum}</td>
 		<td><a href="/product/detail?productNum=${dto.productNum}">${dto.productName}</a></td>
-		<td>${dto.productcontents}</td>
+		<td>${dto.productContents}</td>
 		<td>${dto.productRate}</td>
 		<td>${dto.productJumsu}</td>
 		</tr>
@@ -26,6 +26,6 @@
 	
 	
 	</section>
-<c:import url=" ../temps/bootStrap_js.jsp"></c:import>
+<c:import url="../temps/bootStrap_js.jsp"></c:import>
 </body>
 </html>

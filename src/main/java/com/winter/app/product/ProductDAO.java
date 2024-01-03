@@ -12,7 +12,6 @@ public class ProductDAO {
 
 	
 	
-
 	//디테일 
 	public ProductDTO detail(ProductDTO productDTO) throws Exception {
 		Connection con = DBConnector.getConnector();
