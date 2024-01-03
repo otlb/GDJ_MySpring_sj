@@ -7,7 +7,7 @@ public class ProductDAO {
 	
 	
 	
-	public ProductDTO  detail(ProductDTO bankDTO) {
+	public ProductDTO  detail(ProductDTO productDTO) {
 			
 		return null;
 	}
@@ -17,19 +17,19 @@ public class ProductDAO {
 		
 		return null;
 	}
-	public int add(ProductDTO bnBankDTO) {
+	public int add(ProductDTO productDTO) {
 		
 		return 0;
 		
 	}
 	
-	public int delete(ProductDTO bankDTO) {
+	public int delete(ProductDTO productDTO) {
 		
 		return 0;
 		
 	}
 	
-	public int update(ProductDTO bankDTO) {
+	public int update(ProductDTO productDTO) {
 		
 		return 0;
 		
