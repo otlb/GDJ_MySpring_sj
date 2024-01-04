@@ -31,12 +31,7 @@ public class ProductDAO {
 			productDTO.setProductRate(rs.getDouble("PRODUCTRATE"));
 			productDTO.setProductJumsu(rs.getDouble("PRODUCTJUMSU"));
 
-	
-	public ProductDTO  detail(ProductDTO productDTO) {
-
-			
-		}		
-					
+		}
 		return productDTO;
 	}
 	
