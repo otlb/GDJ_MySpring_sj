@@ -12,7 +12,6 @@ public class ProductDAO {
 
 	
 	
-
 	//디테일 
 	public ProductDTO detail(ProductDTO productDTO) throws Exception {
 		Connection con = DBConnector.getConnector();
@@ -31,10 +30,12 @@ public class ProductDAO {
 			productDTO.setProductRate(rs.getDouble("PRODUCTRATE"));
 			productDTO.setProductJumsu(rs.getDouble("PRODUCTJUMSU"));
 
+
+
 		}
 		return productDTO;
 	}
-	
+
 	//목록
 	public List<ProductDTO> list() throws Exception {	
 		Connection con = DBConnector.getConnector();
